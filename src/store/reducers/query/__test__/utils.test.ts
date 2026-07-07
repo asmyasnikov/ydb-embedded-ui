@@ -4,6 +4,7 @@ import {
     getEffectiveQueryDataForAction,
     getEffectiveQuerySettingsForAction,
     getUniqueTabTitle,
+    isExecutionQueryAction,
     isQueryTabsDirtyPersistedState,
     isQueryTabsPersistedState,
 } from '../utils';
@@ -35,13 +36,13 @@ describe('getActionAndSyntaxFromQueryMode', () => {
     });
 
     test.each([
-        ['query', 'execute-query', 'yql_v1'],
-        ['pg', 'execute-query', 'pg'],
-        ['script', 'execute-script', 'yql_v1'],
-        ['scan', 'execute-scan', 'yql_v1'],
-        ['data', 'execute-data', 'yql_v1'],
+        ['query', 'explain-query', 'yql_v1'],
+        ['pg', 'explain-query', 'pg'],
+        ['script', 'explain-script', 'yql_v1'],
+        ['scan', 'explain-scan', 'yql_v1'],
+        ['data', 'explain-data', 'yql_v1'],
     ] as const)(
-        'maps explain analyze in %s mode to execute-shaped backend action',
+        'maps explain analyze in %s mode to explain-shaped backend action',
         (mode, action, syntax) => {
             const result = getActionAndSyntaxFromQueryMode(QUERY_ACTIONS.explainAnalyze, mode);
 
@@ -90,7 +91,7 @@ describe('getEffectiveQuerySettingsForAction', () => {
         );
     });
 
-    test('overrides explain analyze request settings without mutating source settings', () => {
+    test('forces full stats for explain analyze without mutating source settings', () => {
         const querySettings = {
             queryMode: 'query' as const,
             limitRows: 100,
@@ -104,7 +105,7 @@ describe('getEffectiveQuerySettingsForAction', () => {
 
         expect(result).toEqual({
             queryMode: 'query',
-            limitRows: 1,
+            limitRows: 100,
             statisticsMode: STATISTICS_MODES.full,
         });
         expect(querySettings).toEqual({
@@ -112,6 +113,14 @@ describe('getEffectiveQuerySettingsForAction', () => {
             limitRows: 100,
             statisticsMode: STATISTICS_MODES.none,
         });
+    });
+});
+
+describe('isExecutionQueryAction', () => {
+    test('treats explain analyze as explain-mode, not execute-mode', () => {
+        expect(isExecutionQueryAction(QUERY_ACTIONS.execute)).toBe(true);
+        expect(isExecutionQueryAction(QUERY_ACTIONS.explain)).toBe(false);
+        expect(isExecutionQueryAction(QUERY_ACTIONS.explainAnalyze)).toBe(false);
     });
 });
 
