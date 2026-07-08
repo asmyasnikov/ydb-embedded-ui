@@ -1,0 +1,258 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e8]:
+      - img [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+      - list [ref=e21]:
+        - generic [ref=e22]:
+          - listitem [ref=e23]:
+            - generic [ref=e24]:
+              - link "Database" [ref=e28] [cursor=pointer]:
+                - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=database
+                - img [ref=e31]:
+                  - img [ref=e32]
+                - generic "Database":
+                  - generic: Database
+              - button [ref=e35]
+              - generic:
+                - generic:
+                  - button [ref=e36]
+                  - dialog [ref=e37]:
+                    - generic [ref=e46]:
+                      - generic [ref=e47]:
+                        - generic [ref=e49]:
+                          - generic [ref=e50]: Navigation is here now
+                          - text: Clear separate three workspaces
+                        - button "Got it!" [ref=e51] [cursor=pointer]:
+                          - generic [ref=e52]: Got it!
+                      - button "Close" [ref=e53] [cursor=pointer]:
+                        - img [ref=e56]:
+                          - img [ref=e57]
+                  - button [ref=e59]
+              - button [ref=e60]
+          - listitem [ref=e61]:
+            - link "Diagnostics" [ref=e66] [cursor=pointer]:
+              - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=diagnostics
+              - img [ref=e69]:
+                - img [ref=e70]
+              - generic "Diagnostics":
+                - generic: Diagnostics
+          - listitem [ref=e72]:
+            - link "SQL Editor" [ref=e77] [cursor=pointer]:
+              - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=query
+              - img [ref=e80]:
+                - img [ref=e81]
+              - generic "SQL Editor":
+                - generic: SQL Editor
+      - generic [ref=e83]:
+        - button "Information" [ref=e84] [cursor=pointer]:
+          - img [ref=e87]:
+            - img [ref=e88]
+          - generic "Information":
+            - generic: Information
+        - button "Settings" [ref=e90] [cursor=pointer]:
+          - img [ref=e93]:
+            - img [ref=e94]
+          - generic "Settings":
+            - generic: Settings
+        - button "Account" [ref=e96] [cursor=pointer]:
+          - img [ref=e99]:
+            - img [ref=e100]
+          - generic "Account":
+            - generic: Account
+      - button "Expand" [ref=e102] [cursor=pointer]:
+        - img [ref=e103]:
+          - img [ref=e104]
+    - generic [ref=e107]:
+      - banner [ref=e108]:
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - link "Cluster" [ref=e111] [cursor=pointer]:
+              - link "Cluster" [ref=e112]:
+                - /url: /cluster
+                - generic [ref=e113]: Cluster
+            - generic [ref=e114]: /
+          - listitem [ref=e115]:
+            - link "local" [disabled] [ref=e116]:
+              - generic [ref=e118]: local
+          - listitem [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - button "Copy path" [ref=e122] [cursor=pointer]:
+                  - generic:
+                    - generic:
+                      - img:
+                        - img
+                - button [ref=e123] [cursor=pointer]:
+                  - img [ref=e126]:
+                    - img [ref=e127]
+              - generic [ref=e130] [cursor=pointer]:
+                - img [ref=e132]:
+                  - img [ref=e133]
+                - 'button "Good: 0 issues" [ref=e135]':
+                  - generic [ref=e138]:
+                    - text: "Good: 0 issues"
+                    - img [ref=e139]:
+                      - img [ref=e140]
+        - generic [ref=e142]:
+          - link "Developer UI" [ref=e143] [cursor=pointer]:
+            - /url: http://localhost:8765/internal
+            - img [ref=e146]:
+              - img [ref=e147]
+            - generic [ref=e149]: Developer UI
+          - button [ref=e152] [cursor=pointer]:
+            - img [ref=e155]:
+              - img [ref=e156]
+      - main [ref=e158]:
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - generic [ref=e166]: Navigation
+                - generic [ref=e170]:
+                  - generic [ref=e173] [cursor=pointer]:
+                    - button [ref=e174]
+                    - generic [ref=e176]:
+                      - img [ref=e178]
+                      - generic [ref=e180]: /local
+                  - generic [ref=e183] [cursor=pointer]:
+                    - button [ref=e184]
+                    - generic [ref=e186]:
+                      - img [ref=e188]
+                      - generic [ref=e190]: .metadata
+                  - generic [ref=e193] [cursor=pointer]:
+                    - button [ref=e194]
+                    - generic [ref=e196]:
+                      - img [ref=e198]
+                      - generic [ref=e200]: .sys
+                  - generic [ref=e205] [cursor=pointer]:
+                    - img [ref=e207]
+                    - generic [ref=e209]: .sys_health
+                  - generic [ref=e214] [cursor=pointer]:
+                    - img [ref=e216]
+                    - generic [ref=e218]: a_test_table_1783525601040
+                  - generic [ref=e223] [cursor=pointer]:
+                    - img [ref=e225]
+                    - generic [ref=e227]: a_test_table_1783525616109
+                  - generic [ref=e232] [cursor=pointer]:
+                    - img [ref=e234]
+                    - generic [ref=e236]: a_test_table_1783525638515
+                  - generic [ref=e241] [cursor=pointer]:
+                    - img [ref=e243]
+                    - generic [ref=e245]: a_test_table_1783525652294
+                  - generic [ref=e250] [cursor=pointer]:
+                    - img [ref=e252]
+                    - generic [ref=e254]: a_test_table_1783525667864
+                  - generic [ref=e259] [cursor=pointer]:
+                    - img [ref=e261]
+                    - generic [ref=e263]: a_test_table_1783525679692
+                  - generic [ref=e268] [cursor=pointer]:
+                    - img [ref=e270]
+                    - generic [ref=e272]: a_test_table_1783525859716
+                  - generic [ref=e277] [cursor=pointer]:
+                    - img [ref=e279]
+                    - generic [ref=e281]: a_test_table_1783525869151
+                  - generic [ref=e286] [cursor=pointer]:
+                    - img [ref=e288]
+                    - generic [ref=e290]: a_test_table_1783525878016
+                  - generic [ref=e295] [cursor=pointer]:
+                    - img [ref=e297]
+                    - generic [ref=e299]: a_test_table_1783525887997
+                  - generic [ref=e304] [cursor=pointer]:
+                    - img [ref=e306]
+                    - generic [ref=e308]: my_row_table
+              - generic [ref=e310]:
+                - generic [ref=e311]:
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic [ref=e314]: domain
+                      - generic [ref=e315]: /local
+                    - generic [ref=e316]:
+                      - button "Copy" [ref=e317] [cursor=pointer]:
+                        - generic:
+                          - generic:
+                            - img:
+                              - img
+                      - button [ref=e318] [cursor=pointer]:
+                        - img [ref=e321]:
+                          - img [ref=e322]
+                  - tablist [ref=e326]:
+                    - tab "Overview" [selected] [ref=e327] [cursor=pointer]:
+                      - link "Overview" [ref=e330]:
+                        - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=query&summaryTab=overview
+                - generic [ref=e331]:
+                  - generic [ref=e332]: Directory
+                  - generic [ref=e333]:
+                    - generic [ref=e334]:
+                      - term [ref=e335]:
+                        - generic [ref=e336]: Type
+                      - definition [ref=e338]:
+                        - generic [ref=e339]: Domain
+                    - generic [ref=e340]:
+                      - term [ref=e341]:
+                        - generic [ref=e342]: Id
+                      - definition [ref=e344]:
+                        - generic [ref=e345]: "1"
+                    - generic [ref=e346]:
+                      - term [ref=e347]:
+                        - generic [ref=e348]: Version
+                      - definition [ref=e350]:
+                        - generic [ref=e351]: "113"
+                    - generic [ref=e352]:
+                      - term [ref=e353]:
+                        - generic [ref=e354]: Created
+                      - definition [ref=e356]:
+                        - generic [ref=e357]: 2026-07-08 15:42
+            - generic [ref=e358]:
+              - button [ref=e359] [cursor=pointer]:
+                - img [ref=e362]:
+                  - img [ref=e363]
+              - button [ref=e365] [cursor=pointer]:
+                - img [ref=e368]:
+                  - img [ref=e369]
+          - generic [ref=e374]:
+            - tablist [ref=e376]:
+              - tab "Editor" [selected] [ref=e377] [cursor=pointer]:
+                - link "Editor" [ref=e380]:
+                  - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=query&queryTab=newQuery
+              - tab "History" [ref=e381] [cursor=pointer]:
+                - link "History" [ref=e384]:
+                  - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=query&queryTab=history
+              - tab "Saved" [ref=e385] [cursor=pointer]:
+                - link "Saved" [ref=e388]:
+                  - /url: /database?diagnosticsTab=overview&schema=%2Flocal&database=%2Flocal&databasePage=query&queryTab=saved
+            - generic [ref=e392]:
+              - code [ref=e396]:
+                - generic [ref=e397]:
+                  - generic [ref=e402]: "1"
+                  - textbox "Editor content" [active] [ref=e410]
+              - generic [ref=e411]:
+                - generic [ref=e412]:
+                  - button "Run" [disabled]:
+                    - generic:
+                      - generic:
+                        - img:
+                          - img
+                    - generic: Run
+                  - button "Explain" [disabled]:
+                    - generic:
+                      - generic:
+                        - img:
+                          - img
+                    - generic: Explain
+                  - button [ref=e413] [cursor=pointer]:
+                    - img [ref=e416]:
+                      - img [ref=e417]
+                - generic [ref=e419]:
+                  - button "New query" [ref=e421] [cursor=pointer]:
+                    - img [ref=e424]
+                    - generic [ref=e426]: New query
+                  - button "Save query" [ref=e427] [cursor=pointer]:
+                    - generic [ref=e428]: Save query
+  - generic [ref=e431]:
+    - alert
+    - alert
+```

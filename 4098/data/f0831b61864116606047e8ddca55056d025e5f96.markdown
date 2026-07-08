@@ -1,0 +1,175 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e8]:
+    - img [ref=e13] [cursor=pointer]:
+      - img [ref=e14]
+    - list [ref=e21]:
+      - generic [ref=e22]:
+        - listitem [ref=e23]:
+          - link "Database" [ref=e28] [cursor=pointer]:
+            - /url: /database?diagnosticsTab=overview&database=%2Flocal&databasePage=database
+            - img [ref=e31]:
+              - img [ref=e32]
+            - generic "Database":
+              - generic: Database
+        - listitem [ref=e34]:
+          - link "Diagnostics" [ref=e39] [cursor=pointer]:
+            - /url: /database?diagnosticsTab=overview&database=%2Flocal&databasePage=diagnostics
+            - img [ref=e42]:
+              - img [ref=e43]
+            - generic "Diagnostics":
+              - generic: Diagnostics
+        - listitem [ref=e45]:
+          - link "SQL Editor" [ref=e50] [cursor=pointer]:
+            - /url: /database?diagnosticsTab=overview&database=%2Flocal&databasePage=query
+            - img [ref=e53]:
+              - img [ref=e54]
+            - generic "SQL Editor":
+              - generic: SQL Editor
+    - generic [ref=e56]:
+      - button "Information" [ref=e57] [cursor=pointer]:
+        - img [ref=e60]:
+          - img [ref=e61]
+        - generic "Information":
+          - generic: Information
+      - button "Settings" [ref=e63] [cursor=pointer]:
+        - img [ref=e66]:
+          - img [ref=e67]
+        - generic "Settings":
+          - generic: Settings
+      - button "Account" [ref=e69] [cursor=pointer]:
+        - img [ref=e72]:
+          - img [ref=e73]
+        - generic "Account":
+          - generic: Account
+    - button "Expand" [ref=e75] [cursor=pointer]:
+      - img [ref=e76]:
+        - img [ref=e77]
+  - generic [ref=e80]:
+    - banner [ref=e81]:
+      - list [ref=e82]:
+        - listitem [ref=e83]:
+          - link "Cluster" [ref=e84] [cursor=pointer]:
+            - link "Cluster" [ref=e85]:
+              - /url: /cluster
+              - generic [ref=e86]: Cluster
+          - generic [ref=e87]: /
+        - listitem [ref=e88]:
+          - link "Database" [disabled] [ref=e89]:
+            - generic [ref=e91]: Database
+        - listitem [ref=e92]:
+          - generic [ref=e93]:
+            - button [ref=e95] [cursor=pointer]:
+              - img [ref=e98]:
+                - img [ref=e99]
+            - generic [ref=e102] [cursor=pointer]:
+              - img [ref=e104]:
+                - img [ref=e105]
+              - 'button "Good: 1 issue" [ref=e107]':
+                - generic [ref=e110]:
+                  - text: "Good: 1 issue"
+                  - img [ref=e111]:
+                    - img [ref=e112]
+      - generic [ref=e114]:
+        - link "Developer UI" [ref=e115] [cursor=pointer]:
+          - /url: http://localhost:8765/internal
+          - img [ref=e118]:
+            - img [ref=e119]
+          - generic [ref=e121]: Developer UI
+        - button [ref=e124] [cursor=pointer]:
+          - img [ref=e127]:
+            - img [ref=e128]
+    - main [ref=e130]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e136]:
+            - generic [ref=e138]: Navigation
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144]:
+                  - button [ref=e146] [cursor=pointer]:
+                    - img [ref=e147]:
+                      - img [ref=e148]
+                  - generic [ref=e150]: /
+                - generic [ref=e151]:
+                  - button "Copy" [ref=e152] [cursor=pointer]:
+                    - generic:
+                      - generic:
+                        - img:
+                          - img
+                  - button [ref=e153] [cursor=pointer]:
+                    - img [ref=e156]:
+                      - img [ref=e157]
+              - tablist [ref=e161]:
+                - tab "Overview" [selected] [ref=e162] [cursor=pointer]:
+                  - link "Overview" [ref=e165]:
+                    - /url: /database?diagnosticsTab=overview&database=%2Flocal&databasePage=diagnostics&summaryTab=overview
+          - generic [ref=e167]:
+            - button [ref=e168] [cursor=pointer]:
+              - img [ref=e171]:
+                - img [ref=e172]
+            - button [ref=e174] [cursor=pointer]:
+              - img [ref=e177]:
+                - img [ref=e178]
+        - generic [ref=e183]:
+          - generic [ref=e185]:
+            - tablist [ref=e186]:
+              - tab "Info" [selected] [ref=e187] [cursor=pointer]:
+                - link "Info" [ref=e190]:
+                  - /url: /database?diagnosticsTab=overview&database=%2Flocal&databasePage=diagnostics
+              - tab "Top shards" [ref=e191] [cursor=pointer]:
+                - link "Top shards" [ref=e194]:
+                  - /url: /database?diagnosticsTab=topShards&database=%2Flocal&databasePage=diagnostics
+              - tab "Nodes" [ref=e195] [cursor=pointer]:
+                - link "Nodes" [ref=e198]:
+                  - /url: /database?diagnosticsTab=nodes&database=%2Flocal&databasePage=diagnostics
+              - tab "Tablets" [ref=e199] [cursor=pointer]:
+                - link "Tablets" [ref=e202]:
+                  - /url: /database?diagnosticsTab=tablets&database=%2Flocal&databasePage=diagnostics
+              - tab "Describe" [ref=e203] [cursor=pointer]:
+                - link "Describe" [ref=e206]:
+                  - /url: /database?diagnosticsTab=describe&database=%2Flocal&databasePage=diagnostics
+              - tab "Access" [ref=e207] [cursor=pointer]:
+                - link "Access" [ref=e210]:
+                  - /url: /database?diagnosticsTab=access&database=%2Flocal&databasePage=diagnostics
+            - generic [ref=e211]:
+              - button "Refresh" [ref=e212] [cursor=pointer]:
+                - img [ref=e215]
+              - group [ref=e218] [cursor=pointer]:
+                - combobox [ref=e219]:
+                  - generic [ref=e220]: None
+                - img [ref=e221]:
+                  - img [ref=e222]
+          - generic [ref=e228]:
+            - img [ref=e230]:
+              - img [ref=e231]
+            - generic [ref=e235]:
+              - generic [ref=e236]: 400 Bad Request
+              - generic [ref=e237]:
+                - generic [ref=e238]: "SchemeShard error: Invalid path SchemeCache error: RootUnknown"
+                - generic [ref=e240]:
+                  - generic [ref=e241]:
+                    - term [ref=e242]:
+                      - generic [ref=e243]: URL
+                    - definition [ref=e245]:
+                      - generic [ref=e246]:
+                        - generic [ref=e247]: GET http://localhost:8765/viewer/json/describe?database=%2Flocal&path=&enums=true&partition_stats=false&subs=0
+                        - button "Copy" [ref=e248] [cursor=pointer]:
+                          - generic:
+                            - generic:
+                              - img:
+                                - img
+                  - generic [ref=e249]:
+                    - term [ref=e250]:
+                      - generic [ref=e251]: x-worker-name
+                    - definition [ref=e253]:
+                      - generic [ref=e254]:
+                        - generic [ref=e255]: localhost:8765
+                        - button "Copy" [ref=e256] [cursor=pointer]:
+                          - generic:
+                            - generic:
+                              - img:
+                                - img
+```
